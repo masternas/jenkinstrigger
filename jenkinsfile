@@ -1,3 +1,4 @@
+//simple jenkinsfile
 pipeline{
 	agent any 
 	stages{
