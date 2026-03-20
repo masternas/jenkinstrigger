@@ -41,8 +41,8 @@ pipeline {
                 withSonarQubeEnv('sonarqube server') {
                     sh """
                          mvn sonar:sonar \
-                            -Dsonar.projectKey=vprofile-project \
-                            -Dsonar.projectName=VProfile \
+                            -Dsonar.projectKey=vprofile-project_pipeline_as_code \
+                            -Dsonar.projectName=VProfile_pipeline_as_code \
                             -Dsonar.projectVersion=1.0 \
                             -Dsonar.host.url=${SONAR_HOST_URL} \
                             -Dsonar.login=${SONAR_TOKEN}
